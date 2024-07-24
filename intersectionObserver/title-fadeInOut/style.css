@@ -1,0 +1,28 @@
+body {
+  color: #fff;
+  background-color: #333;
+  min-height: 100vh;
+  padding: 200vh 40px;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  opacity: 0;
+  transition: 2s;
+
+  &.is-inView {
+    animation: fadeIn 2s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
